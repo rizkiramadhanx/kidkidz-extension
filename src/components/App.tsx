@@ -16,5 +16,9 @@ async function executeScript() {
 export const App: React.FC<{ title: string }> = ({ title }) => {
   executeScript();
 
-  return <h1 className={style.h1}>{title}</h1>;
+  return (
+    <div className="w-20 h-20">
+      <h1 className={style.h1}>{title}</h1>
+    </div>
+  );
 };

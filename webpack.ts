@@ -18,6 +18,7 @@ const config: webpack.Configuration = {
     background: join(srcDir, "background.ts"),
     content_script: join(srcDir, "content_script.ts"),
     app: join(srcDir, "app.tsx"),
+    redirect: join(srcDir, "redirect.tsx"),
   },
   output: {
     path: join(__dirname, "dist/js"),

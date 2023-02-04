@@ -1,5 +1,5 @@
 {
-  "name": "speed-reader",
+  "name": "kidkidz-extension",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -54,7 +54,9 @@
     "@linaria/core": "^4.2.5",
     "@linaria/react": "^4.3.3",
     "@linaria/webpack5-loader": "^4.1.11",
+    "axios": "^1.2.6",
     "react": "^18.2.0",
+    "react-chrome-extension-router": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0"
   }

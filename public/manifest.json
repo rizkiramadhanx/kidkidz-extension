@@ -3,11 +3,23 @@
   "name": "chrome-extension",
   "version": "1.0.0",
   "description": "Your description",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
   "action": {
-    "default_popup": "app.html#/popup"
+    "default_popup": "app.html"
   },
   "background": {
     "service_worker": "js/background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["js/content_script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["redirect.html"],
+      "matches": ["*://*/*"]
+    }
+  ]
 }
