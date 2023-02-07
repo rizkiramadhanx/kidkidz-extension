@@ -2,4 +2,6 @@ console.log("🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃�
 console.log("extension background script loaded");
 console.log("🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃");
 
-// replaceText(document.body);
+chrome.runtime.onMessage.addListener((e) => {
+  console.log(e);
+});
